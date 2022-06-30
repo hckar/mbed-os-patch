@@ -1846,6 +1846,46 @@
             "9011"
         ]
     },
+    "MCU_STM32F407xG": {
+        "inherits": [
+            "MCU_STM32F4"
+        ],
+        "public": false,
+        "extra_labels_add": [
+            "STM32F407xG"
+        ],
+        "macros_add": [
+            "STM32F407xx"
+        ],
+        "device_has_add": [
+            "ANALOGOUT",
+            "CAN",
+            "TRNG"
+        ]
+    },
+    "DISCO_F407VG": {
+        "inherits": [
+            "MCU_STM32F407xG"
+        ],
+        "config": {
+            "usb_speed": {
+                "help": "USE_USB_OTG_FS or USE_USB_OTG_HS or USE_USB_HS_IN_FS",
+                "value": "USE_USB_OTG_FS"
+            }
+        },
+        "overrides": {
+            "lse_available": 0
+        },
+        "device_has_add": [
+            "FLASH", 
+            "MPU"
+        ],
+        "release_versions": [
+            "2", 
+            "5"
+        ],
+        "device_name": "STM32F407VGTx"
+    },
     "MCU_STM32F411xE": {
         "inherits": [
             "MCU_STM32F4"
