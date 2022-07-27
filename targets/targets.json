@@ -4549,6 +4549,37 @@
         ],
         "device_name": "STM32L4S5VITx"
     },
+    "MCU_STM32L4S7xI": {
+        "inherits": [
+            "MCU_STM32L4"
+        ],
+        "public": false,
+        "components_add": [
+            "FLASHIAP"
+        ],
+        "extra_labels_add": [
+            "STM32L4S7xI"
+        ],
+        "macros_add": [
+            "STM32L4S7xx",
+            "MBEDTLS_CONFIG_HW_SUPPORT"
+        ]
+    },
+    "NUCLEO_L4PICO": {
+        "inherits": [
+            "MCU_STM32L4S7xI"
+        ],
+        "supported_form_factors": [
+            "ARDUINO_UNO"
+        ],
+        "device_name": "STM32L4S7ZITx",
+        "detect_code": [
+            "0776"
+        ],
+        "device_has_add": [
+            "USBDEVICE"
+        ]
+    },
     "MCU_STM32L5": {
         "inherits": [
             "MCU_STM32"
