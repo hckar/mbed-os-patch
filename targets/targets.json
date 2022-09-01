@@ -1884,7 +1884,10 @@
             "2", 
             "5"
         ],
-        "device_name": "STM32F407VGTx"
+        "device_name": "STM32F407VGTx",
+        "detect_code": [
+            "066c"
+        ]
     },
     "MCU_STM32F411xE": {
         "inherits": [
