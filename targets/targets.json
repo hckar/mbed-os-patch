@@ -4576,9 +4576,6 @@
             "ARDUINO_UNO"
         ],
         "device_name": "STM32L4S7ZITx",
-        "detect_code": [
-            "0776"
-        ],
         "device_has_add": [
             "USBDEVICE"
         ]
