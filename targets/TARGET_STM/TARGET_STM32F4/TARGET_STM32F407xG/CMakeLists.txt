@@ -21,6 +21,7 @@ target_include_directories(mbed-stm32f407xg
 target_sources(mbed-stm32f407xg
     INTERFACE
         ${STARTUP_FILE}
+        system_clock.c
 )
 
 mbed_set_linker_script(mbed-stm32f407xg ${CMAKE_CURRENT_SOURCE_DIR}/${LINKER_FILE})
