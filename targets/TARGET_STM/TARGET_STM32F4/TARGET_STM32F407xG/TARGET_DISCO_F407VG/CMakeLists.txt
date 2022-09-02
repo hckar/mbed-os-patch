@@ -1,16 +1,16 @@
 # Copyright (c) 2022 ARM Limited. All rights reserved.
 # SPDX-License-Identifier: Apache-2.0
 
-add_library(mbed-disco-f407vg-disc1 INTERFACE)
+add_library(mbed-disco-f407vg INTERFACE)
 
-target_sources(mbed-disco-f407vg-disc1
+target_sources(mbed-disco-f407vg
     INTERFACE
         PeripheralPins.c
 )
 
-target_include_directories(mbed-disco-f407vg-disc1
+target_include_directories(mbed-disco-f407vg
     INTERFACE
         .
 )
 
-target_link_libraries(mbed-disco-f407vg-disc1 INTERFACE mbed-stm32f407xg)
+target_link_libraries(mbed-disco-f407vg INTERFACE mbed-stm32f407xg)
